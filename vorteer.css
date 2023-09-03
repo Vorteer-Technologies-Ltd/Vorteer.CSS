@@ -1,4 +1,3 @@
-/* Apply some basic styles to the entire page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f2f2f2;
@@ -42,34 +41,31 @@ body {
     -webkit-box-shadow: 0 1px 0 #aaaaaa, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
-  /* Button Hover Effect */
   button:hover {
-    filter: brightness(95%); /* Slightly darken the button on hover */
+    filter: brightness(95%);
   }
   
-  /* Remove box shadow for all buttons when active */
   button:active,
   button.dark:active,
   button.success:active,
   button.notice:active,
   button.failure:active,
   button.caution:active {
-    transform: translateY(1px); /* Move the button down 1px on click */
-    filter: brightness(90%); /* Darken the button when clicked */
+    transform: translateY(1px);
+    filter: brightness(90%);
     -webkit-box-shadow: 0 1px 0 #aaaaaa00, 0 1px 0 #0000000d inset;
   }
   
-  /* Specific button styles */
   button.success {
     background-image: linear-gradient(
       to bottom,
       #34c759,
       #28a745
-    ); /* Button gradient */
+    );
     color: #fff;
     border: 1px solid #1e7e34;
     text-shadow: 0px 1px 0px #1e7e34;
-    position: relative; /* Add relative positioning to the success button */
+    position: relative;
     -webkit-box-shadow: 0 1px 0 #1e7e34, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
@@ -78,11 +74,11 @@ body {
       to bottom,
       #636367,
       #3d3d42
-    ); /* Button gradient */
+    );
     color: #fff;
     border: 1px solid #232327;
     text-shadow: 0px 1px 0px #232327;
-    position: relative; /* Add relative positioning to the success button */
+    position: relative;
     -webkit-box-shadow: 0 1px 0 #232327, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
@@ -91,11 +87,11 @@ body {
       to bottom,
       #7385ee,
       #4a5dca
-    ); /* Button gradient */
+    );
     color: #fff;
     border: 1px solid #2a3a98;
     text-shadow: 0px 1px 0px #2a3a98;
-    position: relative; /* Add relative positioning to the notice button */
+    position: relative;
     -webkit-box-shadow: 0 1px 0 #2a3a98, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
@@ -104,11 +100,11 @@ body {
       to bottom,
       #e84958,
       #d02d3d
-    ); /* Button gradient */
+    );
     color: #fff;
     border: 1px solid #a31b29;
     text-shadow: 0px 1px 0px #a31b29;
-    position: relative; /* Add relative positioning to the failure button */
+    position: relative;
     border-radius: 3px;
     -webkit-box-shadow: 0 1px 0 #a31b29, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
@@ -118,11 +114,11 @@ body {
       to bottom,
       #ffd780,
       #f4c73c
-    ); /* Button gradient */
+    );
     color: #000000;
     border: 1px solid #a5831b;
     text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
-    position: relative; /* Add relative positioning to the caution button */
+    position: relative;
     -webkit-box-shadow: 0 1px 0 #a5831b, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
@@ -142,9 +138,12 @@ body {
   a {
     color: #4a5dca;
     text-decoration: none;
-    border-bottom: 1px solid #4a5dca;
-    padding-bottom: 0.5px;
     font-size: 12px;
+  }
+
+  a:hover {
+    color: #2a3a98;
+    text-decoration: underline;
   }
   
   ul {
@@ -192,7 +191,6 @@ body {
     clear: both;
   }
   
-  /* Alert styles */
   .alert {
     font-size: 12px;
     padding: 10px;
@@ -201,7 +199,6 @@ body {
     position: relative;
   }
   
-  /* Success alert */
   .alert.success {
     background-image: linear-gradient(
       to bottom,
@@ -215,7 +212,6 @@ body {
       0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
-  /* notice alert */
   .alert.notice {
     background-image: linear-gradient(
       to bottom,
@@ -228,7 +224,6 @@ body {
     -webkit-box-shadow: 0 1px 0 #2a3a9800, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
-  /* Failure alert */
   .alert.failure {
     background-image: linear-gradient(
       to bottom,
@@ -242,7 +237,6 @@ body {
     -webkit-box-shadow: 0 1px 0 #a31b2900, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
-  /* Caution alert */
   .alert.caution {
     background-image: linear-gradient(
       to bottom,
@@ -255,7 +249,6 @@ body {
     -webkit-box-shadow: 0 1px 0 #ae7a0600, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
   }
   
-  /* Navbar styles */
   .navbar {
     background-image: linear-gradient(to bottom, #fefefe, #e1e1e1);
     color: #000;
@@ -290,40 +283,39 @@ body {
     align-items: center;
     max-width: calc(4 / 3 * 100vh);
     margin: 0 auto;
-    height: 20px; /* Set the height of the Navbar container */
+    height: 20px;
   }
   
   .brand-container {
     font-size: 12px;
-    display: flex; /* Add flex properties for centering */
-    align-items: center; /* Vertically center the content */
+    display: flex;
+    align-items: center;
   }
   
   .button-container {
     display: flex;
     gap: 10px;
-    align-items: center; /* Vertically center the buttons */
-    margin-left: auto; /* Push the buttons to the right */
+    align-items: center;
+    margin-left: auto;
   }
   
   .interactions {
     display: flex;
     gap: 10px;
-    align-items: center; /* Vertically center the buttons */
+    align-items: center;
   }
   
-  /* Responsive styles */
   @media screen and (max-width: 768px) {
     .nav-container {
       padding: 0 20px;
     }
   
     .brand-container {
-      font-size: 12px; /* Adjust font size for smaller screens */
+      font-size: 12px;
     }
   
     .button-container {
-      flex: 1; /* Allow the buttons to take up remaining space */
-      justify-content: flex-end; /* Push buttons to the right */
+      flex: 1;
+      justify-content: flex-end;
     }
   }  
