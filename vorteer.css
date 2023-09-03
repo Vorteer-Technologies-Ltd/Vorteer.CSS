@@ -1,0 +1,329 @@
+/* Apply some basic styles to the entire page */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    border: 1px solid #aaa;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  p {
+    font-size: 12px;
+  }
+  
+  button.small {
+    padding: 2px 5px;
+    font-size: 7.5px;
+    line-height: 2;
+  }
+  
+  button {
+    padding: 10px 10px;
+    font-size: 12px;
+    line-height: 1.33;
+    position: relative;
+    margin: 5px;
+    border-radius: 3px;
+    background-image: linear-gradient(to bottom, #ffffff, #e1e1e1);
+    background-color: #ffffff;
+    color: #000;
+    border: 1px solid #aaaaaa;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+    cursor: pointer;
+    -webkit-box-shadow: 0 1px 0 #aaaaaa, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* Button Hover Effect */
+  button:hover {
+    filter: brightness(95%); /* Slightly darken the button on hover */
+  }
+  
+  /* Remove box shadow for all buttons when active */
+  button:active,
+  button.dark:active,
+  button.success:active,
+  button.notice:active,
+  button.failure:active,
+  button.caution:active {
+    transform: translateY(1px); /* Move the button down 1px on click */
+    filter: brightness(90%); /* Darken the button when clicked */
+    -webkit-box-shadow: 0 1px 0 #aaaaaa00, 0 1px 0 #0000000d inset;
+  }
+  
+  /* Specific button styles */
+  button.success {
+    background-image: linear-gradient(
+      to bottom,
+      #34c759,
+      #28a745
+    ); /* Button gradient */
+    color: #fff;
+    border: 1px solid #1e7e34;
+    text-shadow: 0px 1px 0px #1e7e34;
+    position: relative; /* Add relative positioning to the success button */
+    -webkit-box-shadow: 0 1px 0 #1e7e34, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  button.dark {
+    background-image: linear-gradient(
+      to bottom,
+      #636367,
+      #3d3d42
+    ); /* Button gradient */
+    color: #fff;
+    border: 1px solid #232327;
+    text-shadow: 0px 1px 0px #232327;
+    position: relative; /* Add relative positioning to the success button */
+    -webkit-box-shadow: 0 1px 0 #232327, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  button.notice {
+    background-image: linear-gradient(
+      to bottom,
+      #7385ee,
+      #4a5dca
+    ); /* Button gradient */
+    color: #fff;
+    border: 1px solid #2a3a98;
+    text-shadow: 0px 1px 0px #2a3a98;
+    position: relative; /* Add relative positioning to the notice button */
+    -webkit-box-shadow: 0 1px 0 #2a3a98, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  button.failure {
+    background-image: linear-gradient(
+      to bottom,
+      #e84958,
+      #d02d3d
+    ); /* Button gradient */
+    color: #fff;
+    border: 1px solid #a31b29;
+    text-shadow: 0px 1px 0px #a31b29;
+    position: relative; /* Add relative positioning to the failure button */
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 #a31b29, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  button.caution {
+    background-image: linear-gradient(
+      to bottom,
+      #ffd780,
+      #f4c73c
+    ); /* Button gradient */
+    color: #000000;
+    border: 1px solid #a5831b;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+    position: relative; /* Add relative positioning to the caution button */
+    -webkit-box-shadow: 0 1px 0 #a5831b, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  input[type="text"],
+  textarea {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 12px;
+  }
+  
+  input[type="text"]::placeholder,
+  textarea::placeholder {
+    color: #aaa;
+  }
+  
+  a {
+    color: #4a5dca;
+    text-decoration: none;
+    border-bottom: 1px solid #4a5dca;
+    padding-bottom: 0.5px;
+    font-size: 12px;
+  }
+  
+  ul {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  li {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin: 5px 0;
+    font-size: 12px;
+  }
+  
+  h1 {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 25px;
+    font-weight: normal;
+  }
+  
+  select {
+    border: 1px solid #aaa;
+    border-radius: 5px;
+    padding: 10px;
+  }
+  
+  hr.solid {
+    border-top: 1px solid #00000020;
+    border-bottom: none;
+  }
+  
+  label {
+    display: block;
+    margin-top: 10px;
+  }
+  
+  input[type="checkbox"],
+  input[type="radio"] {
+    margin-right: 5px;
+  }
+  
+  br {
+    clear: both;
+  }
+  
+  /* Alert styles */
+  .alert {
+    font-size: 12px;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 3px;
+    position: relative;
+  }
+  
+  /* Success alert */
+  .alert.success {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(52 199 89 / 25%),
+      rgb(40 167 69 / 35%)
+    );
+    color: rgb(30 126 52);
+    border: 1px solid rgb(30 126 52 / 50%);
+    position: relative;
+    -webkit-box-shadow: 0 1px 0 rgb(30 126 52 / 0%),
+      0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* notice alert */
+  .alert.notice {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(115 133 238 / 25%),
+      rgb(74 93 202 / 35%)
+    );
+    color: rgb(42 58 152);
+    border: 1px solid rgb(42 58 152 / 50%);
+    position: relative;
+    -webkit-box-shadow: 0 1px 0 #2a3a9800, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* Failure alert */
+  .alert.failure {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(232 73 88 / 25%),
+      rgb(208 45 61 / 35%)
+    );
+    color: rgb(163 27 41);
+    border: 1px solid rgb(163 27 41 / 50%);
+    position: relative;
+    border-radius: 3px;
+    -webkit-box-shadow: 0 1px 0 #a31b2900, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* Caution alert */
+  .alert.caution {
+    background-image: linear-gradient(
+      to bottom,
+      rgb(255 203 89 / 25%),
+      rgb(255 178 7 / 35%)
+    );
+    color: rgb(174 122 6);
+    border: 1px solid rgb(174 122 6 / 50%);
+    position: relative;
+    -webkit-box-shadow: 0 1px 0 #ae7a0600, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+  }
+  
+  /* Navbar styles */
+  .navbar {
+    background-image: linear-gradient(to bottom, #fefefe, #e1e1e1);
+    color: #000;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 20px;
+    -webkit-box-shadow: 0 1px 0 #aaaaaa, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    padding: 10px 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .navbar.dark {
+    background-image: linear-gradient(to bottom, #616165, #3d3d42);
+    color: #fff;
+    text-shadow: 0px 1px 0px #232327;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    height: 20px;
+    -webkit-box-shadow: 0 1px 0 #232327, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+    padding: 10px 0;
+    z-index: 1;
+    overflow: hidden;
+  }
+  
+  .nav-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: calc(4 / 3 * 100vh);
+    margin: 0 auto;
+    height: 20px; /* Set the height of the Navbar container */
+  }
+  
+  .brand-container {
+    font-size: 12px;
+    display: flex; /* Add flex properties for centering */
+    align-items: center; /* Vertically center the content */
+  }
+  
+  .button-container {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Vertically center the buttons */
+    margin-left: auto; /* Push the buttons to the right */
+  }
+  
+  .interactions {
+    display: flex;
+    gap: 10px;
+    align-items: center; /* Vertically center the buttons */
+  }
+  
+  /* Responsive styles */
+  @media screen and (max-width: 768px) {
+    .nav-container {
+      padding: 0 20px;
+    }
+  
+    .brand-container {
+      font-size: 12px; /* Adjust font size for smaller screens */
+    }
+  
+    .button-container {
+      flex: 1; /* Allow the buttons to take up remaining space */
+      justify-content: flex-end; /* Push buttons to the right */
+    }
+  }  
