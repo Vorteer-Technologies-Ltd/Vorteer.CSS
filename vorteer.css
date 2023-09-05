@@ -176,6 +176,8 @@ select {
 hr.solid {
   border-top: 1px solid #00000020;
   border-bottom: none;
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 
 label {
@@ -294,6 +296,14 @@ overflow: hidden;
   display: flex;
   gap: 10px;
   align-items: center;
+}
+
+.well {
+  background-image: linear-gradient(to bottom, #e1e1e1, #fefefe);
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
 }
 
 @media screen and (max-width: 768px) {
