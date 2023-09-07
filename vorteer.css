@@ -20,13 +20,68 @@ p {
 }
 
 button.small {
-  padding: 2px 5px;
-  font-size: 7.5px;
+  padding: 4px 5px;
+  font-size: 9px;
   line-height: 2;
 }
 
-button {
+.badge {
   padding: 10px 10px;
+  display: inline-block;
+  text-allign: center;
+  font-size: 12px;
+  line-height: 0.1;
+  position: relative;
+  margin: 5px;
+  margin-left: 0px;
+  margin-top: 0px;
+  border-radius: 3px;
+  background-image: linear-gradient(to bottom, #ffffff, #e1e1e1);
+  background-color: #ffffff;
+  color: #000;
+  border: 1px solid #aaaaaa;
+  text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
+}
+
+.badge.success {
+  background-image: linear-gradient(to bottom, #42ca64, #28a745);
+  color: #fff;
+  border: 1px solid #1e7e34;
+  text-shadow: 0px 1px 0px rgb(0 0 0 / 30%);
+}
+
+.badge.dark {
+  background-image: linear-gradient(to bottom, #636367, #3d3d42);
+  color: #fff;
+  border: 1px solid #232327;
+  text-shadow: 0px 1px 0px rgb(0 0 0 / 30%);
+}
+
+.badge.notice {
+  background-image: linear-gradient(to bottom, #7082ec, #4b5eca);
+  color: #fff;
+  border: 1px solid #2a3a98;
+  text-shadow: 0px 1px 0px rgb(0 0 0 / 30%);
+}
+
+.badge.failure {
+  background-image: linear-gradient(to bottom, #e95664, #d12e3e);
+  color: #fff;
+  border: 1px solid #a82936;
+  text-shadow: 0px 1px 0px rgb(0 0 0 / 30%);
+}
+
+.badge.caution {
+  background-image: linear-gradient(to bottom, #ffda87, #f4c73d);
+  color: #000;
+  border: 1px solid #a5831b;
+  text-shadow: 0px 1px 0px rgb(255 255 255 / 30%);
+}
+
+button {
+  display: inline-block;
+  text-allign: center;
+  padding: 9.5px 7px;
   font-size: 12px;
   line-height: 1.33;
   position: relative;
@@ -41,6 +96,12 @@ button {
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
   cursor: pointer;
   -webkit-box-shadow: 0 1px 0 #aaaaaa, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
+}
+
+button.medium {
+  padding: 3px 5px;
+  font-size: 10px;
+  line-height: 2.4;
 }
 
 button:hover {
@@ -539,7 +600,6 @@ h4.panel-heading.caution {
     #ffda88,
     #f4c73c
   );
-  color: #000000;
   border-bottom: 1px solid #a5831b;
 }
 
@@ -556,4 +616,4 @@ h4.panel-heading.caution {
     flex: 1;
     justify-content: flex-end;
   }
-}  
+}  +
