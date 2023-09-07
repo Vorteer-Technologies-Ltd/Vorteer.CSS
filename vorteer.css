@@ -65,9 +65,8 @@ img.thumbnail {
   border-radius: 5px;
   display: inline-block;
   height: auto;
-  max-width: 100%;
   padding: 4px;
-  background-color: #ffffff;
+  background-color: #fff;
   border: 1px solid #aaa;
 }
 
