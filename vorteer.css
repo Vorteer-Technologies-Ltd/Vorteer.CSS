@@ -95,9 +95,10 @@ img.thumbnail.circle {
   text-shadow: 0px 1px 0px rgb(255 255 255 / 30%);
 }
 
-button {
+button,
+input[type="submit"] {
   display: inline-block;
-  text-allign: center;
+  text-align: center;
   padding: 9.5px 7px;
   font-size: 12px;
   line-height: 1.33;
@@ -115,13 +116,15 @@ button {
   -webkit-box-shadow: 0 1px 0 #aaaaaa, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-button.medium {
+button.medium,
+input[type="submit"].medium {
   padding: 3px 5px;
   font-size: 10px;
   line-height: 2.4;
 }
 
-button:hover {
+button:hover,
+input[type="submit"]:hover {
   filter: brightness(95%);
 }
 
@@ -130,18 +133,23 @@ button.dark:active,
 button.success:active,
 button.notice:active,
 button.failure:active,
-button.caution:active {
+button.caution:active,
+input[type="submit"]:active,
+input[type="submit"].dark:active,
+input[type="submit"].success:active,
+input[type="submit"].notice:active,
+input[type="submit"].failure:active,
+input[type="submit"].caution:active {
   transform: translateY(1px);
   filter: brightness(90%);
   -webkit-box-shadow: 0 1px 0 #aaaaaa00, 0 1px 0 #0000000d inset;
 }
 
-button.success {
-  background-image: linear-gradient(
-    to bottom,
-    #34c759,
-    #28a745
-  );
+button.success,
+input[type="submit"].success {
+  background-image: linear-gradient(to bottom,
+      #34c759,
+      #28a745);
   color: #fff;
   border: 1px solid #1e7e34;
   text-shadow: 0px 1px 0px #1e7e34;
@@ -149,12 +157,11 @@ button.success {
   -webkit-box-shadow: 0 1px 0 #1e7e34, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-button.dark {
-  background-image: linear-gradient(
-    to bottom,
-    #636367,
-    #3d3d42
-  );
+button.dark,
+input[type="submit"].dark {
+  background-image: linear-gradient(to bottom,
+      #636367,
+      #3d3d42);
   color: #fff;
   border: 1px solid #232327;
   text-shadow: 0px 1px 0px #232327;
@@ -162,12 +169,11 @@ button.dark {
   -webkit-box-shadow: 0 1px 0 #232327, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-button.notice {
-  background-image: linear-gradient(
-    to bottom,
-    #7385ee,
-    #4a5dca
-  );
+button.notice,
+input[type="submit"].notice {
+  background-image: linear-gradient(to bottom,
+      #7385ee,
+      #4a5dca);
   color: #fff;
   border: 1px solid #2a3a98;
   text-shadow: 0px 1px 0px #2a3a98;
@@ -175,12 +181,11 @@ button.notice {
   -webkit-box-shadow: 0 1px 0 #2a3a98, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-button.failure {
-  background-image: linear-gradient(
-    to bottom,
-    #e84958,
-    #d02d3d
-  );
+button.failure,
+input[type="submit"].failure {
+  background-image: linear-gradient(to bottom,
+      #e84958,
+      #d02d3d);
   color: #fff;
   border: 1px solid #a31b29;
   text-shadow: 0px 1px 0px #a31b29;
@@ -189,12 +194,11 @@ button.failure {
   -webkit-box-shadow: 0 1px 0 #a31b29, 0 1px 0 rgba(255, 255, 255, 0.3) inset;
 }
 
-button.caution {
-  background-image: linear-gradient(
-    to bottom,
-    #ffd780,
-    #f4c73c
-  );
+button.caution,
+input[type="submit"].caution {
+  background-image: linear-gradient(to bottom,
+      #ffd780,
+      #f4c73c);
   color: #000000;
   border: 1px solid #a5831b;
   text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.3);
@@ -533,6 +537,20 @@ h4.panel-heading.dark {
   margin-bottom: 5px;
 }
 
+input[type="password"],
+textarea {
+  border: 1px solid #aaa;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+input[type="password"]::placeholder,
+textarea::placeholder {
+  color: #aaa;
+}
+
 h4.panel-heading.notice {
   padding: 10px;
   margin-top: 0px;
@@ -635,4 +653,4 @@ h4.panel-heading.caution {
     flex: 1;
     justify-content: flex-end;
   }
-}
+}  +
